@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="Two.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+</head>
+
+<body style="background-color: black">
+    <section>
+        
+
+        <button id="btn1" class="btn1" value="easy">Easy</button>
+        <button id="btn2" class="btn2" value="medium">Medium</button>
+        <button id="btn3" class="btn3" value="hard">Hard</button>
+      
+       
+        <div class="container">
+            <h1 class ="slide" style="color: azure">HANGMAN</h1>
+           </div>
+
+            <img class="hangman" src="images\image.png" width="90" height="200"> 
+          
+    </section>
+    <script >
+        var easybtn = document.getElementById("btn1");
+        var mediumbtn = document.getElementById("btn2");
+        var Hardbtn = document.getElementById("btn3");
+        var difficulty="";
+        var url ="";
+        easybtn.addEventListener('click', function(event){
+            difficulty = event.target.value.toLowerCase(); 
+           // url = `https://opentdb.com/api.php?amount=10&category=18&difficulty=${difficulty}&type=multiple`
+            url = `main.html?difficulty=${difficulty}`;
+            window.location.href = url;
+        })
+        
+        mediumbtn.addEventListener('click',function(event){
+            difficulty = event.target.value.toLowerCase(); 
+            // url = `https://opentdb.com/api.php?amount=10&category=18&difficulty=${difficulty}&type=multiple`
+            url = `main.html?difficulty=${difficulty}`;
+            window.location.href = url;
+        })
+
+        Hardbtn.addEventListener('click',function(evebt){
+            difficulty = event.target.value.toLowerCase(); 
+           // url = `https://opentdb.com/api.php?amount=10&category=18&difficulty=${difficulty}&type=multiple`
+           url = `main.html?difficulty=${difficulty}`;
+            window.location.href = url;
+        })
+        console.log(url);
+    
+        </script>     
+</body>

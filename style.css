@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.app {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 10%;
+}
+
+.hangmanGame {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hangman-box h1 {
+    font-size: 1.45rem;
+    text-align: center;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+.hangman-box img {
+    user-select: none;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+.question-container {
+    width: 700px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.questions {
+    margin: 0 auto;
+    margin-bottom: 15px;
+    width: 650px;
+    height:75px;
+    background-color: rgba(255, 115, 0, 0.966);;
+    border-radius: 5px;
+    box-shadow: 1px 1px 0px 3px #cccccc;
+    text-align: left;
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+    padding:2px 10px;
+    caret-color: transparent;
+    text-align: center;
+}
+
+.questions label {
+    font-weight: bold;
+    display: block;
+}
+
+.questions-input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    word-wrap: break-word;
+    display: inline-block;
+    padding-left: 10px;
+    
+}
+
+.option-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    /* flex-wrap: wrap; */
+    width: 500px;
+    gap: 20px;
+    position: relative;
+    left: 10%;
+    transform: translate(1%,0);
+}
+
+.option.selected {
+    background-color:#20aaff; /* Change the background color for selected options */
+    color: #fff; /* Change the text color for selected options */
+    font-weight: bold; /* Make the text bold for selected options */
+}
+
+.correct{
+    background-color: #075537;
+}
+.wrong{
+    background-color: rgb(196, 60, 60);
+}
+
+.option {
+    flex: 0 0 calc(50% - 10px);
+    padding-top: 15px;
+    box-sizing: border-box;
+    height: 60px;
+    background-color: rgba(255, 115, 0, 0.966);
+    margin-top: 10px;
+    border: 1px solid black;
+    font-weight: 400;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    caret-color: transparent;
+    text-align: center;
+    width: 270px;
+}
+
+.option:hover{
+    background-color: grey;
+    transition: 0.3s ease-out;
+}
+
+.option label {
+    font-weight: bold;
+}
+
+.option input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.selected{
+    background-color: whitesmoke;
+    transition: 0.3s ease-out;
+}
+
+
+
+
+:where(.game-modal) button:hover {
+    background: #8286c9;
+}
+.game-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    pointer-events: none;
+    background: rgba(0,0,0,0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    padding: 0 10px;
+    transition: opacity 0.4s ease;
+}
+.game-modal.show {
+    opacity: 1;
+    pointer-events: auto;
+    transition: opacity 0.4s 0.4s ease;
+}
+.game-modal .content {
+    padding: 30px;
+    max-width: 420px;
+    width: 100%;
+    border-radius: 10px;
+    background: #fff;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+.game-modal img {
+    max-width: 130px;
+    margin-bottom: 20px;
+}
+.game-modal img[src="images/victory.gif"] {
+    margin-left: -10px;
+}
+.game-modal h4 {
+    font-size: 1.53rem;
+}
+.game-modal p {
+    font-size: 1.15rem;
+    margin: 15px 0 30px;
+    font-weight: 500;
+}
+.game-modal p b {
+    color: #5E63BA;
+    font-weight: 600;
+}
+.game-modal button {
+    padding: 12px 23px;
+}
+
+@media (max-width: 782px) {
+    .container {
+        flex-direction: column;
+        padding: 30px 15px;
+        align-items: center;
+    }
+    .hangman-box img {
+        max-width: 200px;
+    }
+    .hangman-box h1 {
+        display: none;
+    }
+    .game-box h4 {
+        font-size: 1rem;
+    }
+    .word-display .letter {
+        margin-bottom: 35px;
+        font-size: 1.7rem;
+    }
+    .word-display .letter.guessed {
+        margin: -35px 0 25px;
+    }
+    .game-modal img {
+        max-width: 120px;
+    }
+    .game-modal h4 {
+        font-size: 1.45rem;
+    }
+    .game-modal p {
+        font-size: 1.1rem;
+    }
+    .game-modal button {
+        padding: 10px 18px;
+    }
+}
