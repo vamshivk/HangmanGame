@@ -1,14 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hangman Game</title>
-    <link rel="stylesheet" href="style.css"> 
-    
+    <title>Hangman</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-image: linear-gradient(rgba(233, 142, 13, 0.8), rgba(255,255,255,0.5)), url('images/spider.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Hangman Game</h1>
+    <h1 class="heading">&#x1F383; Hangman &#x1F383;</h1>
+    <img id="broom1" src="images/witch.png" alt="Broom">
     <div class="game-modal">
         <div class="content">
             <img src="#" alt="gif">
@@ -23,14 +36,15 @@
             </div>
         </div>
         <div class="question-container">
-            <div class="questions">   
+            <div class="questions">
                 <p id="question-input"></p>
             </div>
             <div id="optionContainer" class="option-container">
             </div>
-        </div>    
+        </div>
     </div>
     <script src="script2.js"></script>
     <script src="script.js"></script>
 </body>
+
 </html>

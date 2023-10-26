@@ -35,9 +35,6 @@ fetch(`https://opentdb.com/api.php?amount=10&category=18&difficulty=${diff}&type
         console.error('Error fetching data: ', error);
     })
 
-
-
-
 // Function to fetch a new question
 async function fetchQuestion(index) {
     const storedJsonData = localStorage.getItem('jsonData');
@@ -80,7 +77,6 @@ function resetoptions() {
 // Initialize the game by showing the first question
 showQuestion(currentIndex);
 
-
 function verifyOption(correctAnswer, e) {
     var selectedOption = e.target;
     
@@ -115,12 +111,7 @@ function verifyOption(correctAnswer, e) {
             showQuestion(currentIndex++);
         }, 3000)
     }
-
-
-
 }
-
-
 
 const gameOver = (isVictory) => {
     // After game complete.. showing modal with relevant details
