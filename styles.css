@@ -1,0 +1,562 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background-color: beige;
+}
+
+.onescreen{
+    height: 100vh;
+    background: #000;
+    display: flex;
+    letter-spacing: 10%;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    height: 100vh;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#pumpkin-video{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    opacity: 0.9;
+}
+
+video {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+#main1 {
+    margin: 0;
+    padding: -5px;
+    position: absolute;
+    top: 40%;
+    left: 2%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    color: #393e46;
+    background: -webkit-linear-gradient(black, beige);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: black;
+    font-size: 105px;
+    font-weight: bolder;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 15px;
+    z-index: 2;
+}
+
+#main1 span {
+
+    display: inline-block;
+    /*animation: none; /* Remove the previous animation */
+    /*transform: none;*/
+    animation: animate 1s linear forwards;
+    transform-origin: center X%; /* Set the rotation center to the element's center */
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+        transform: rotateY(90deg);
+        filter: blur(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: rotateY(0deg);
+        filter: blur(0);
+    }
+}
+
+#main1 span:nth-child(1)
+{
+    animation-delay: 1s;
+}
+#main1 span:nth-child(2)
+{
+    animation-delay: 2s;
+}
+#main1 span:nth-child(3)
+{
+    animation-delay: 2.5s;
+}
+#main1 span:nth-child(4)
+{
+    animation-delay: 3s;
+}
+#main1 span:nth-child(5)
+{
+    animation-delay: 3.5s;
+}
+#main1 span:nth-child(6)
+{
+    animation-delay: 4s;
+}
+#main1 span:nth-child(7)
+{
+    animation-delay: 4.5s;
+}
+
+.pumpkin {
+    position: absolute;
+    background-image: url('images/pumpkin.png'); 
+    width: 100px; 
+    height: 100px;
+    bottom: 0;
+    top:57%;
+    left:37%;
+    animation: fadePumpkin 4s linear infinite alternate; 
+    background-size: cover;
+    bottom: 0;
+}
+
+
+.pumpkin:nth-child(4) {
+    left: 58.25%;
+    top:57%;
+}
+
+
+/* Keyframe animation to make the pumpkins fade in and out */
+@keyframes fadePumpkin {
+    0%, 100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+.btn {
+    position: absolute;
+    top: 60%;
+    text-align: center;
+    left: 44%;
+    font-size: 29px;
+    font-weight: 700;
+    padding: 15px;
+    color: beige;
+    background-color: #393e46;
+    border: 10px solid 10px; 
+    border-radius: 30px;
+    letter-spacing: 2px;
+    font-family:'Poppins', sans-serif;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    background-color:honeydew;
+    color: black;
+}
+
+.btn:focus {
+    outline: 0;
+}
+
+.btn:active {
+    transform: translateY(4px);
+}
+
+.btn1 {
+    position: absolute;
+    top: 62%;
+    text-align: center;
+    left: 27%;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 0.2em 1em;
+    background: -webkit-linear-gradient(beige, black);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: beige;
+    border: 10px solid medium;
+    border-radius: 35px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+}
+
+.btn2 {
+    position: absolute;
+    top: 62%;
+    text-align: center;
+    left: 43%;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 0.2em 1em;
+    background: -webkit-linear-gradient(beige, black);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+    color: beige;
+    border: 10px solid medium;
+    border-radius: 35px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+}
+.btn3 {
+    position: absolute;
+    top: 62%;
+    text-align: center;
+    left: 63%;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 0.2em 1em;
+    background: -webkit-linear-gradient(beige, black);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+     color: beige;
+    border: 10px solid medium;
+    border-radius: 35px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+}
+
+.btn1:hover {
+    transform: translateY(-10px);
+    background-color:honeydew;
+    color: black;
+}
+
+.btn2:hover {
+    transform: translateY(-10px);
+    background-color:honeydew;
+    color: black;
+}
+
+.btn3:hover {
+    transform: translateY(-10px);
+    background-color:honeydew;
+    color: black;
+}
+
+span {
+    position: relative;
+    top: 52%;
+    left: 48.5%;
+    z-index: 100;
+    font-size: 55px;
+    color: white;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    animation: spin 4s linear infinite; 
+}
+
+.container
+{
+text-align: center ;
+margin-top: 50%;
+}
+
+#main2 {
+   
+    background: -webkit-linear-gradient(beige, black);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 30%;
+    left: 2%;
+    width: 100%;
+    text-align: center;
+    color: #393e46;
+    font-size: 7em;
+    font-weight: bolder;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 15px;
+    z-index: 2;
+}
+.hat {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 12%;
+    height: 30%;
+    position: absolute;
+    top: 12%;
+    left: 65.5%;
+    /*animation: slidingimage .7s ease-in; Adjust the spacing to fit your design */
+}
+
+#broom {
+    position: absolute;
+    top: 27%;
+    left: 0; /* Start from the left side of the screen */
+    animation: slide 4s linear infinite; /* Adjust the duration as needed */
+}
+
+@keyframes slide {
+    0% {
+        left: 0; /* Start position */
+    }
+    100% {
+        left: 100%; /* End position (right side of the screen) */
+    }
+}
+
+.heading {
+    text-align: center;
+    justify-content: center;
+    margin-left: 0%;
+    margin-right: 0%;
+    font-size: 40px;
+}
+.app {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 10%;
+}
+
+.hangmanGame {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hangman-box h1 {
+    font-size: 1.45rem;
+    text-align: center;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+#broom1 {
+    position: absolute;
+    top: 4%;
+    height: 40%;
+    left: 0; /* Start from the left side of the screen */
+    animation: slide 4s linear infinite; /* Adjust the duration as needed */
+}
+
+.hangman-box img {
+    user-select: none;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.question-container {
+    width: 49%;
+    padding: 16px;
+    /* background-color: beige; */
+    border: none;
+    margin-left: -1%;
+    margin-right: 2%;
+}
+
+.questions {
+    margin: 0 auto;
+    margin-bottom: 15px;
+    width: 97%;
+    height:auto;
+    background-color: black;
+    border-radius: 35px;
+    box-shadow: 1px 1px 0px 3px #cccccc;
+    text-align: left;
+    font-weight: 600;
+    cursor: pointer;
+    color: beige;
+    padding:4px 10px;
+    caret-color: transparent;
+    text-align: left;
+}
+
+.questions label {
+    font-weight: bold;
+    display: block;
+}
+
+.questions-input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    word-wrap: break-word;
+    display: inline-block;
+    padding-left: 10px;
+    
+}
+
+.option-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    /* flex-wrap: wrap; */
+    width: 500px;
+    gap: 20px;
+
+}
+
+.option.selected {
+    background-color:#20aaff; /* Change the background color for selected options */
+    color: #fff; /* Change the text color for selected options */
+    font-weight: bold; /* Make the text bold for selected options */
+}
+
+.correct{
+    background-color: green;
+}
+.wrong{
+    background-color: red;
+}
+
+.video-container {
+    position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+}
+
+.video-container video {
+    opacity: 0.3; /*Adjust the opacity value as needed (0.0 to 1.0) */
+    width: 100%;
+    height: 100%;
+}
+   
+.option {
+    flex: 0 0 calc(50% - 10px);
+    padding-top: 4px;
+    box-sizing: border-box;
+    height: 60px;
+    background-color: black;
+    margin-top: 10px;
+    border: 1px solid black;
+    font-weight: 550;
+    border-radius: 35px;
+    color: beige;
+    cursor: pointer;
+    caret-color: transparent;
+    text-align: center;
+    width: 270px;
+}
+
+.option:hover{
+    background-color: grey;
+    transition: 0.3s ease-out;
+}
+
+.option label {
+    font-weight: bold;
+}
+
+.option input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.selected{
+    background-color: whitesmoke;
+    transition: 0.3s ease-out;
+}
+
+:where(.game-modal) button:hover {
+    background: #8286c9;
+}
+.game-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    pointer-events: none;
+    background: rgba(0,0,0,0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    padding: 0 10px;
+    transition: opacity 0.4s ease;
+}
+.game-modal.show {
+    opacity: 1;
+    pointer-events: auto;
+    transition: opacity 0.4s 0.4s ease;
+}
+.game-modal .content {
+    padding: 30px;
+    max-width: 420px;
+    width: 100%;
+    border-radius: 10px;
+    background: #fff;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+.game-modal img {
+    max-width: 130px;
+    margin-bottom: 20px;
+}
+.game-modal img[src="images/victory.gif"] {
+    margin-left: -10px;
+}
+.game-modal h4 {
+    font-size: 1.53rem;
+}
+.game-modal p {
+    font-size: 1.15rem;
+    margin: 15px 0 30px;
+    font-weight: 500;
+}
+.game-modal p b {
+    color: #5E63BA;
+    font-weight: 600;
+}
+.game-modal button {
+    padding: 12px 23px;
+}
+
+@media (max-width: 782px) {
+    .container {
+        flex-direction: column;
+        padding: 30px 15px;
+        align-items: center;
+    }
+    .hangman-box img {
+        max-width: 200px;
+    }
+    .hangman-box h1 {
+        display: none;
+    }
+    .game-box h4 {
+        font-size: 1rem;
+    }
+    .word-display .letter {
+        margin-bottom: 35px;
+        font-size: 1.7rem;
+    }
+    .word-display .letter.guessed {
+        margin: -35px 0 25px;
+    }
+    .game-modal img {
+        max-width: 120px;
+    }
+    .game-modal h4 {
+        font-size: 1.45rem;
+    }
+    .game-modal p {
+        font-size: 1.1rem;
+    }
+    .game-modal button {
+        padding: 10px 18px;
+    }
+}
+
+
