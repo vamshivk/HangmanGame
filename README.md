@@ -38,6 +38,12 @@ In the spirit of Halloween, we've spookified this classic game with an education
 ## Credits
 - Computer Science related sourced from the API endpoint for the Open Trivia Database (OpenTDB) API - [Link](https://opentdb.com/api.php?amount=10&category=18&difficulty)
 
+## Design and Development Process
+- Planning: In the planning phase, our goal was to create an educational game. We have decided on Hnagman game and outlined the initial concept with three levels of difficulty. Praneetha took a lead role in HTML development and the initial JavaScript setup, Pratyusha focused on CSS styling, design and in JavaScript Setup, while Vamshi handled JavaScript integration with the API and advanced JavaScript development. 
+- Development: During the development phase, we sourced the content, integrating an API to fetch questions. We emphasized user interface design, focusing on creating a seamless and visually appealing game. Task breakdown in the planning phase allowed us to allocate work efficiently based on individual strengths and interests. 
+- Testing and Quality Assurance: Continuous playtesting among team members helped identify and address issues to improve the user experience. We tackled challenges related to error handling, especially with API responses. Vamshi played a crucial role in error handing, while Pratyusha and Praneetha contributed their technical expertise to address all other issues.
+- Deployment: In the deployment phase, we established a GitHub repository and configured deployment settings for GitHub Pages. This step ensured that our game could be accessed online, making it available to a wider audience. The entire team collaborated to set up the repository and configure deployment.
+
 ## What worked
 - Collaboration of our team: This team assignment brought together students with diverse skills and perspectives. This collaborative effort allowed us to tackle various aspects of this project efficiently.
 - API Integration: To provide the questions related to Computer Science for users to learn, we decided to integrate an API. The instance where this decision was extremely helpful was when we decided to create a feature for the user to select the desired difficulty level (Beginner, Intermediate, Hard) which is a feature that enhanced the educational aspect of our game. This decision made the task relatively easy, which contributed to catering our game to users with varying levels of expertise thus broadening our game's audience. 
@@ -59,7 +65,7 @@ In the spirit of Halloween, we've spookified this classic game with an education
  This experience also made us realize how strong each one of us is, in working as a team. We also realized that by leveraging our individual strengths, we can achieve more collectively. 
 - We discovered how gaming can be a powerful tool to be informative.
 - Working our way through the API is a skill worth learning. Though initially, we struggled with integrating the API, we overcame it by learning the importance of optimizing API requests.
-- User feedback is crucial for any project development. Having knowledge about real-time player/user feedback can be a way to enhance the functionalities or the adding changes to the UI design which will help the developer refine the project.
+- User feedback is crucial for any project development. Having knowledge about real-time player feedback can be a way to enhance the functionalities or the adding changes to the UI design which will help the developer refine the project.
 - A collaborative working environment enhances the developer's creative synergy which leads to innovative thoughts to resolve the problem at hand. While brainstorming, we explored several ideas and perspectives which made the developing process more interesting.
 - We have learned how Agile methodology helps in addressing the issues adeptly. Whenever we find an issue, we have adapted a development plan to fix it.
 
