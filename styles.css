@@ -53,10 +53,10 @@ video {
     background: -webkit-linear-gradient(black, beige);
     -webkit-background-clip: text;
     -webkit-text-fill-color: black;
-    font-size: 105px;
-    font-weight: bolder;
+    font-size: 205px;
+    font-weight: 800;
     font-family: 'Poppins', sans-serif;
-    letter-spacing: 15px;
+    letter-spacing: 0px;
     z-index: 2;
 }
 
@@ -403,9 +403,9 @@ margin-top: 50%;
 }
 
 .option.selected {
-    background-color:#20aaff; /* Change the background color for selected options */
-    color: #fff; /* Change the text color for selected options */
-    font-weight: bold; /* Make the text bold for selected options */
+    background-color:#20aaff; 
+    color: #fff; 
+    font-weight: bold; 
 }
 
 .correct{
