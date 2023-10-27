@@ -22,6 +22,15 @@ In the spirit of Halloween, we've spookified this classic game with an education
 2. Open the 'index.html' file in your browser.
 3. Start playing the game and enjoy educating and informative experience.
 
+## Deployment Instructions
+
+1. Upload the Repository to GitHub: First, upload the project's repository to GitHub. This can be done by creating a new repository on GitHub or pushing the local repository to an existing one.
+2. Access and Configure Repository Settings: Once the repository is on GitHub, go to the repository's page. On the top menu of your repository, click on "Settings."
+4. Configure Deployment Source: In the left sidebar, navigate to the "Pages" section. Under "Source", click on the dropdown menu and select Deploy from a branch (typically, the `main` or `master` branch).
+5. Select Publishing Source: After the deployment branch is selected, GitHub Pages will automatically detect the root directory. If the HTML file is in the root directory, it will serve as the main page. However, a different directory can also be defined.
+6. Save the Configuration: Click the "Save" button to save the GitHub Pages configuration.
+7. Access Your Deployed Site: After saving the configuration, GitHub Pages will provide a URL using which the deployed site can be accessed.
+
 ## Credits
 - Computer Science related sourced from the API endpoint for the Open Trivia Database (OpenTDB) API - [Link](https://opentdb.com/api.php?amount=10&category=18&difficulty)
 
