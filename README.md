@@ -46,3 +46,6 @@ In the spirit of Halloween, we've spookified this classic game with an education
 - User feedback is crucial for any project development. Having knowledge about real-time player/user feedback can be a way to enhance the functionalities or the adding changes to the UI design which will help the developer refine the project.
 - A collaborative working environment enhances the developer's creative synergy which leads to innovative thoughts to resolve the problem at hand. While brainstorming, we explored several ideas and perspectives which made the developing process more interesting.
 - We have learned how Agile methodology helps in addressing the issues adeptly. Whenever we find an issue, we have adapted a development plan to fix it.
+
+## Game Link
+* https://vamshivk.github.io/HangmanGame/
