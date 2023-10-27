@@ -1,8 +1,9 @@
 # Hangman
 
-## Game Objective and Rules
+## Game Objective 
 In the spirit of Halloween, we've spookified this classic game with an educational twist! The objective of our ghoulishly fun game is to enhance the players' knowledge of Computer Science while enjoying the experience of doing so. To add to the excitement, we've crafted three levels of difficulty: Beginner, Intermediate, and Expert, ensuring a hauntingly good time for all.
 
+## Rules
 - You can choose your preferred difficulty level: Beginner, Intermediate, and Expert. After choosing the levels you will be presented with questions related to the field of Computer Science.
 - The goal is to guess the correct response to the question and save the hangman from being hanged.
 - Select an option among the four presented, that you think answers the question correctly.
@@ -18,9 +19,12 @@ In the spirit of Halloween, we've spookified this classic game with an education
 - API for generating questions
 
 ## Setup Instructions
-1. Clone this repository to your local machine.
-2. Open the 'index.html' file in your browser.
-3. Start playing the game and enjoy educating and informative experience.
+1. Clone this repository to your local machine. You can do so by executing the following command in your command prompt:
+   ```
+git clone https://github.com/vamshivk/HangmanGame.git
+   ```
+3. Open the 'index.html' file from this project folder using your preferred browser.
+4. Start playing the game and enjoy educating and informative experience.
 
 ## Deployment Instructions
 
@@ -41,6 +45,9 @@ In the spirit of Halloween, we've spookified this classic game with an education
 - Effective communication: There were a few moments where we had debates about the layout of the interface. Though among the team we had different perspectives regarding design approaches, we had open communication with each other and took everyone's thoughts as input to help improve the development process iteratively. This taught each one of us the power of communication and compromise.
 - Task Breakdown: Breaking down the assignment into smaller tasks contributed to our careful planning and was helpful in assigning the work to teammates effectively. We divided the tasks based on everyone's interests and strengths. Our team made sure that every aspect of this project received attention.
 
+## What didn't work
+- Overly Ambitious Goals: As a team, we found ourselves setting overly ambitious goals, to include many features in our game like enabling the user to customize the themes to enhance user personalization. Due to design constraints, we focused on a single theme. Through this experience, we learned that striking a balance between ambition and feasibility is crucial.
+
 ## Challenges faced
 - Managing the API requests and responses was challenging for our team, this called for dynamic planning to stay on track. One situation was where we attempted to fetch numerous questions at once which led to a noticeable lag in loading times. This taught us the importance of optimizing API requests.
 - Error handling was also burdensome as we had issues with undesired responses from the API. To maintain a seamless experience throughout the game, we had to work on it and perform testing and debugging multiple times.
@@ -56,5 +63,10 @@ In the spirit of Halloween, we've spookified this classic game with an education
 - A collaborative working environment enhances the developer's creative synergy which leads to innovative thoughts to resolve the problem at hand. While brainstorming, we explored several ideas and perspectives which made the developing process more interesting.
 - We have learned how Agile methodology helps in addressing the issues adeptly. Whenever we find an issue, we have adapted a development plan to fix it.
 
-## Game Link
+## Game URL
 * https://vamshivk.github.io/HangmanGame/
+
+## Contributors
+- Vamshi Krishna Mummadi
+- Praneetha Pradeep
+- Pratyusha Samidhapudi
