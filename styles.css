@@ -66,7 +66,7 @@ video {
     /*animation: none; /* Remove the previous animation */
     /*transform: none;*/
     animation: animate 1s linear forwards;
-    transform-origin: center X%; /* Set the rotation center to the element's center */
+    transform-origin: center 80%; /* Set the rotation center to the element's center */
 }
 
 @keyframes animate {
@@ -335,14 +335,15 @@ margin-top: 50%;
     text-align: center;
     margin-top: 20px;
     text-transform: uppercase;
+    caret-color: transparent;
 }
 
-#broom1 {
+ #broom1 {
     position: absolute;
     top: 4%;
     height: 40%;
-    left: 0; /* Start from the left side of the screen */
-    animation: slide 4s linear infinite; /* Adjust the duration as needed */
+    left: 0;
+    animation: slide 4s linear infinite; 
 }
 
 .hangman-box img {
@@ -395,6 +396,7 @@ margin-top: 50%;
 
 .option-container {
     display: grid;
+    margin-left: 15%;
     grid-template-columns: auto auto;
     /* flex-wrap: wrap; */
     width: 500px;
@@ -470,6 +472,18 @@ margin-top: 50%;
 :where(.game-modal) button:hover {
     background: #8286c9;
 }
+
+.play-again{
+
+    color: white;
+    font-weight: 20%;
+    background-color: black;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 25px;
+    cursor: pointer;
+
+}
 .game-modal {
     position: fixed;
     top: 0;
@@ -499,6 +513,8 @@ margin-top: 50%;
     background: #fff;
     text-align: center;
     box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    background-image: linear-gradient(rgba(186, 139, 29, 0), rgba(255,255,255,1)),url('images/EndBackground.jpg');
+
 }
 .game-modal img {
     max-width: 130px;

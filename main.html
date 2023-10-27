@@ -10,7 +10,11 @@
         body {
             /*  */
             background-image: linear-gradient(rgba(186, 139, 29, 0), rgba(255,255,255,1)),url('images/Background.jpg');
-            background-size: 100% 100%;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            /* background-size: 100% 100%; */
             background-repeat: no-repeat;
             background-position: center;
             margin: 0;
@@ -22,7 +26,7 @@
 
 <body>
     <h1 class="heading">&#x1F383; Hangman &#x1F383;</h1>
-    <img id="broom1" src="images/witch.png" alt="Broom">
+  <img id="broom1" src="images/witch.png" alt="Broom">
     <div class="game-modal">
         <div class="content">
             <img src="#" alt="gif">

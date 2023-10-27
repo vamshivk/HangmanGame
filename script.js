@@ -106,7 +106,7 @@ function verifyOption(correctAnswer, e) {
     else {
         setTimeout(() => {
             showQuestion(currentIndex++);
-        }, 3000)
+        }, 1000)
     }
 }
 
