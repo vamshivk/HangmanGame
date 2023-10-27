@@ -19,15 +19,13 @@
         <button id="btn1" class="btn1" value="easy">Beginner</button>
         <button id="btn2" class="btn2" value="medium">Intermediate</button>
         <button id="btn3" class="btn3" value="hard">Expert</button>
-      
-       
+
         <div class="container">
             <h1 id="main2" style="color: beige">HANGMAN</h1>
         </div>
+
         <img class="hat" src="images/hat.png" width="100" height="80" alt="Hat">
         <img id="broom" src="images/witch.png" alt="Broom">
-
-          
     </section>
     <script >
         var easybtn = document.getElementById("btn1");
@@ -37,34 +35,30 @@
         var difficulty="";
         var url ="";
         easybtn.addEventListener('click', function(event){
-        
-           
+
             difficulty = event.target.value.toLowerCase(); 
-            
            // url = `https://opentdb.com/api.php?amount=10&category=18&difficulty=${difficulty}&type=multiple`
             url = `main.html?difficulty=${difficulty}`;
-            
             window.location.href = url;
             
         })
         
         mediumbtn.addEventListener('click',function(event){
+
             difficulty = event.target.value.toLowerCase(); 
-           // url = `https://opentdb.com/api.php?amount=10&category=18&difficulty=${difficulty}&type=multiple`
-           url = `main.html?difficulty=${difficulty}`;
-            
+            // url = `https://opentdb.com/api.php?amount=10&category=18&difficulty=${difficulty}&type=multiple`
+            url = `main.html?difficulty=${difficulty}`;
             window.location.href = url;
             
         })
         Hardbtn.addEventListener('click',function(evebt){
+
             difficulty = event.target.value.toLowerCase(); 
-           // url = `https://opentdb.com/api.php?amount=10&category=18&difficulty=${difficulty}&type=multiple`
-           url = `main.html?difficulty=${difficulty}`;
-            
+            // url = `https://opentdb.com/api.php?amount=10&category=18&difficulty=${difficulty}&type=multiple`
+            url = `main.html?difficulty=${difficulty}`;
             window.location.href = url;
+
         })
-        
         console.log(url);
-    
         </script>     
 </body>

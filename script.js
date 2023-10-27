@@ -1,7 +1,4 @@
 // DOM elements
-
-
-
 const questionInput = document.getElementById("question-input");
 const optionInput = document.getElementById('optionContainer');
 const hangmanImage = document.querySelector('.hangman-box img');
