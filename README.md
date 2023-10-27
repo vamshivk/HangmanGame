@@ -21,7 +21,7 @@ In the spirit of Halloween, we've spookified this classic game with an education
 ## Setup Instructions
 1. Clone this repository to your local machine. You can do so by executing the following command in your command prompt:
    ```
-git clone https://github.com/vamshivk/HangmanGame.git
+   git clone https://github.com/vamshivk/HangmanGame.git
    ```
 3. Open the 'index.html' file from this project folder using your preferred browser.
 4. Start playing the game and enjoy educating and informative experience.
