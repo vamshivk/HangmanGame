@@ -85,7 +85,6 @@ function verifyOption(correctAnswer, e) {
         selectedOption.style.backgroundColor = "#C43C3C";
         wrongGuessCount++;
         hangmanImage.src = `images/hangman-${wrongGuessCount}.svg`;
-
     }
 
     const optionContainer = document.getElementById("optionContainer");
@@ -111,7 +110,6 @@ function verifyOption(correctAnswer, e) {
 }
 
 const gameOver = (isVictory) => {
-    // After game complete.. showing modal with relevant details
     console.log(isVictory)
     const modalText = isVictory ? `You found the word:` : 'The correct word was:';
     gameModal.querySelector("img").src = `images/${isVictory ? 'victory' : 'lost'}.gif`;
@@ -119,7 +117,7 @@ const gameOver = (isVictory) => {
     gameModal.classList.add("show");
 }
 playAgainBtn.addEventListener("click", () => {
-    window.location.href = "index.html";
+    window.location.href = "Levels.html";
 });
 
 

@@ -50,9 +50,10 @@ video {
     width: 100%;
     text-align: center;
     color: #393e46;
-    background: -webkit-linear-gradient(black, beige);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: black;
+    background: linear-gradient(to bottom, black, beige); /* Use the standard linear-gradient */
+    background-clip: text;
+    -webkit-background-clip: text; 
+    color: transparent; 
     font-size: 205px;
     font-weight: 800;
     font-family: 'Poppins', sans-serif;
@@ -180,7 +181,8 @@ video {
     font-size: 2rem;
     font-weight: 700;
     padding: 0.2em 1em;
-    background: -webkit-linear-gradient(beige, black);
+    background: linear-gradient(beige, black);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     color: beige;
@@ -198,9 +200,10 @@ video {
     font-size: 2rem;
     font-weight: 700;
     padding: 0.2em 1em;
-    background: -webkit-linear-gradient(beige, black);
-   -webkit-background-clip: text;
-   -webkit-text-fill-color: transparent;
+    background: linear-gradient(beige, black);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     color: beige;
     border: 10px solid medium;
     border-radius: 35px;
@@ -215,7 +218,8 @@ video {
     font-size: 2rem;
     font-weight: 700;
     padding: 0.2em 1em;
-    background: -webkit-linear-gradient(beige, black);
+    background: linear-gradient(beige, black);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
      color: beige;
@@ -263,8 +267,8 @@ margin-top: 50%;
 }
 
 #main2 {
-   
     background: -webkit-linear-gradient(beige, black);
+    background-clip: text;
    -webkit-background-clip: text;
    -webkit-text-fill-color: transparent;
     margin: 0;
